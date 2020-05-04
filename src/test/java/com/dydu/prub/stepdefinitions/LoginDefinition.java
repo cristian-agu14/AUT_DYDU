@@ -11,8 +11,10 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import questions.TheUserIsLogin;
 import utils.WebDriverFactory;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class LoginDefinition {
 
@@ -33,6 +35,7 @@ public class LoginDefinition {
 
 	@Then("the user see the homepage")
 	public void theUserSeeTheHomepage() {
+		theActorInTheSpotlight().should(seeThat(TheUserIsLogin.successful()));
 	}
 
 }
