@@ -10,7 +10,7 @@ public class TheUserIsLogin implements Question<Boolean> {
 
 	@Override
 	public Boolean answeredBy(Actor actor) {
-
+		
 		return BUTTON_USER_HOMEPAGE.resolveFor(theActorInTheSpotlight()).isVisible();
 
 	}

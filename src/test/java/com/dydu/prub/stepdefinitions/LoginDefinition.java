@@ -28,7 +28,7 @@ public class LoginDefinition {
 		OnStage.theActorCalled("The user").whoCan(BrowseTheWeb.with(WebDriverFactory.web().onPage("dydupage")));
 	}
 
-	@When("the user enter the user and password")
+	@When("the user write the user and password")
 	public void theUserEnterTheUserAndPassword() {
 		theActorInTheSpotlight().attemptsTo(EnterUserAndPass.inPageOfLogin());
 	}
