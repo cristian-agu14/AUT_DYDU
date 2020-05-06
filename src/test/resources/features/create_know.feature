@@ -12,9 +12,9 @@ Feature: Create a know for a bot
     When the user select a bot created with <nameBot>
     When the user write a <question> in the bot select
     When the user configure a <answer> for the question created
-    When test the know to created
-    Then user can to see the <answer> to the <question>
+    When test the know to created with <question>
+    Then user can to see the <answer> is correct
 
     Examples: 
-      | nameBot      | question | answer |
-      | bot_test_qa3 | Espagnol |        |
+      | nameBot      | question                                            | answer                                                                                   |
+      | bot_test_qa3 | Hola new bot, como puedo ver los estados de cuenta? | Hola, su estado lo puede ver en la pestaña estados de la parte superior derecha. Saludos |

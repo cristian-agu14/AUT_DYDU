@@ -22,6 +22,7 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.LoggerFactory;
 
 public class WebDriverFactory {
 
@@ -131,7 +132,7 @@ public class WebDriverFactory {
         return prop.getProperty(parametro);
        
         } catch(IOException e) {
-            System.out.println(e.toString());
+        	LoggerFactory.getLogger(this.getClass()).error(e.getMessage(), e);
         }
        
         return null;
