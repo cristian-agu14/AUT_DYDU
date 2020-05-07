@@ -19,17 +19,17 @@ public class CreateKnowDefinition {
 		theActorInTheSpotlight().attemptsTo(IntoToCreateKnow.newInTheBot(nameBot));
 	}
 
-	@When("the user write a (.*) in the bot select")
+	@When("the user write a question (.*) in the bot select")
 	public void theUserWriteAInTheBotSelect(String question) {
 		theActorInTheSpotlight().attemptsTo(IntoQuestion.inField(question));
 	}
 
-	@When("the user configure a (.*) for the question created")
+	@When("the user configure a answer (.*) for the question created")
 	public void theUserConfigureAForTheQuestionCreated(String answer) {
 		theActorInTheSpotlight().attemptsTo(IntoAnswer.inField(answer));
 	}
 
-	@When("test the know to created with (.*)")
+	@When("test the know to created with the question (.*)")
 	public void testTheKnowToCreated(String question) {
 		theActorInTheSpotlight().attemptsTo(InTheChatBot.enterTheQuestion(question));
 	}
