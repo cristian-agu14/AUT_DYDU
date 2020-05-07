@@ -7,8 +7,6 @@ import static utils.RemembresTheActor.ANSWER_BOT_FROM_CHAT_BOT;
 
 public class WhichIsTheAnswer implements Question<String> {
 
-	private String expectedAnswer;
-
 	@Override
 	public String answeredBy(Actor actor) {
 		actor.attemptsTo(GetTextFrom.chatBox("0"));

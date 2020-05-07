@@ -16,11 +16,11 @@ Feature: Create a know for a bot
     Then user can to see the <answer> is correct
 
     Examples: 
-      | nameBot      | question                        | answer                                   |
-      | bot_test_qa3 | ¿Cuantas veces puedo descargar? | Hola, hasta 5 descargas diarias. Saludos |
+      | nameBot  | question                        | answer                                   |
+      | cristian | ¿Cuantas veces puedo descargar? | Hola, hasta 5 descargas diarias. Saludos |
 
   @create-a-bot-with-a-Knowledge
-  Scenario Outline: how user create a Knowledge, i want to create this Knowledge to a bot created
+  Scenario Outline: how user create a Knowledge, I want to create a bot and a Knowledge to this bot
     Given the user see the homepage
     When the user start to create the bot
     When enter <nameBot> and <language> for the user
@@ -32,5 +32,5 @@ Feature: Create a know for a bot
     Then user can to see the <answer> is correct
 
     Examples: 
-      | nameBot      | language | question                                  | answer                                   |
-      | bot_test_qa5 | Spanish  | ¿Cuantas veces puedo descargar un driver? | Hola, hasta 5 descargas diarias. Saludos |
+      | nameBot   | language | question                                          | answer                                             |
+      | cristian1 | Spanish  | ¿Cuantas consultas medicas puedo tener en un dia? | Hola, puede agendar hasta 3 citas por día. Saludos |

@@ -2,7 +2,6 @@ package interactions;
 
 import org.openqa.selenium.WebDriver;
 
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.targets.Target;

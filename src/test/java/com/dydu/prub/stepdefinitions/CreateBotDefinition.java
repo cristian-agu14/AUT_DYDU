@@ -21,7 +21,7 @@ public class CreateBotDefinition {
 	}
 
 	@When("enter (.*) and (.*) for the user")
-	public void theUserEnterBot_test_qaAndEspagnol(String nameBot, String language) {
+	public void theUserEnterBot(String nameBot, String language) {
 		theActorInTheSpotlight().attemptsTo(CreateBot.whitNameAndLanguaje(nameBot, language));
 	}
 

@@ -14,5 +14,5 @@ Feature: Create a bot for test this functionality
     Then the user can to see the bot created with the name <nameBot>
 
     Examples: 
-      | nameBot      | language |
-      | bot_test_qa3 | Espagnol |
+      | nameBot  | language |
+      | cristian | Espagnol |
